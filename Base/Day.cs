@@ -24,12 +24,17 @@ namespace AdventOfCode
             }
         }
 
+        public bool Testing { get; set; }
+        public List<string> Data { get { if (Testing) return Test; return Input; } }
+
         public string InputLocation { get { return $"{FolderLocation}\\input.txt";  } }
         public List<string> Input   { get { return Helper.ReadInput(InputLocation); } }
 
         public string TestLocation { get { return $"{FolderLocation}\\test.txt";  } }
         public List<string> Test   { get { return Helper.ReadInput(TestLocation); } }
 
+        private void Log(string s) => Console.WriteLine(s);
+        
         public abstract void Q1();
         public abstract void Q2();
              

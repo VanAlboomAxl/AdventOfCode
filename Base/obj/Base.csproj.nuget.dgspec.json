@@ -4,6 +4,64 @@
     "Y:\\Repositories\\AdventOfCode\\Base\\Base.csproj": {}
   },
   "projects": {
+    "Y:\\Repositories\\AdventOfCode\\2022\\2022.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\Repositories\\AdventOfCode\\2022\\2022.csproj",
+        "projectName": "2022",
+        "projectPath": "Y:\\Repositories\\AdventOfCode\\2022\\2022.csproj",
+        "packagesPath": "C:\\Users\\Axl Van Alboom\\.nuget\\packages\\",
+        "outputPath": "Y:\\Repositories\\AdventOfCode\\2022\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Axl Van Alboom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj": {
+                "projectPath": "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "Y:\\Repositories\\AdventOfCode\\Base\\Base.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -18,15 +76,76 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "Y:\\Repositories\\AdventOfCode\\2022\\2022.csproj": {
+                "projectPath": "Y:\\Repositories\\AdventOfCode\\2022\\2022.csproj"
+              },
+              "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj": {
+                "projectPath": "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj",
+        "projectName": "Helper",
+        "projectPath": "Y:\\Repositories\\AdventOfCode\\Helper\\Helper.csproj",
+        "packagesPath": "C:\\Users\\Axl Van Alboom\\.nuget\\packages\\",
+        "outputPath": "Y:\\Repositories\\AdventOfCode\\Helper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Axl Van Alboom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +156,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
