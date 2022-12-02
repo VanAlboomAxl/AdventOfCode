@@ -1,0 +1,15 @@
+Y:\Repositories\AdventOfCode\Helper\bin\Debug\net6.0\Helper.exe
+Y:\Repositories\AdventOfCode\Helper\bin\Debug\net6.0\Helper.deps.json
+Y:\Repositories\AdventOfCode\Helper\bin\Debug\net6.0\Helper.runtimeconfig.json
+Y:\Repositories\AdventOfCode\Helper\bin\Debug\net6.0\Helper.dll
+Y:\Repositories\AdventOfCode\Helper\bin\Debug\net6.0\Helper.pdb
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.csproj.AssemblyReference.cache
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.AssemblyInfoInputs.cache
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.AssemblyInfo.cs
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.csproj.CoreCompileInputs.cache
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.dll
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\refint\Helper.dll
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.pdb
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\Helper.genruntimeconfig.cache
+Y:\Repositories\AdventOfCode\Helper\obj\Debug\net6.0\ref\Helper.dll

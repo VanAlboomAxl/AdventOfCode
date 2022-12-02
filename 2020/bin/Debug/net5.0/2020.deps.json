@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "2020/1.0.0": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.4.0.53"
+        },
+        "runtime": {
+          "2020.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/19.4.0.53": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.4.0.53",
+            "fileVersion": "19.4.0.53"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "2020/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Licensing/19.4.0.53": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V7eVfg0Ohx5/I9OaH3obiYzoyiuiz2Kb40tYOlcJon58Y0Srgp5BFfvIKnmYsuSoIQ6CZX2YR7j0jzFocb1EKg==",
+      "path": "syncfusion.licensing/19.4.0.53",
+      "hashPath": "syncfusion.licensing.19.4.0.53.nupkg.sha512"
+    }
+  }
+}

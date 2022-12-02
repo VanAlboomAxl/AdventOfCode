@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/sRklCg8tWF8aTKSKwjW7oNQEwP57uJepTYyIsTMKoIs3JAFeGCr9CPSE0FRUjDRUc7PTmfe2e5DJLwwtXn2hw==",
+  "success": true,
+  "projectFilePath": "Y:\\Repositories\\AdventOfCode\\2020\\2020.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Axl Van Alboom\\.nuget\\packages\\syncfusion.licensing\\19.4.0.53\\syncfusion.licensing.19.4.0.53.nupkg.sha512"
+  ],
+  "logs": []
+}

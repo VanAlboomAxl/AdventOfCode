@@ -1,0 +1,16 @@
+Y:\Repositories\AdventOfCode\Base\bin\Debug\net5.0\Base.exe
+Y:\Repositories\AdventOfCode\Base\bin\Debug\net5.0\Base.deps.json
+Y:\Repositories\AdventOfCode\Base\bin\Debug\net5.0\Base.runtimeconfig.json
+Y:\Repositories\AdventOfCode\Base\bin\Debug\net5.0\Base.runtimeconfig.dev.json
+Y:\Repositories\AdventOfCode\Base\bin\Debug\net5.0\Base.dll
+Y:\Repositories\AdventOfCode\Base\bin\Debug\net5.0\Base.pdb
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.csproj.AssemblyReference.cache
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.AssemblyInfoInputs.cache
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.AssemblyInfo.cs
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.csproj.CoreCompileInputs.cache
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.dll
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\ref\Base.dll
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.pdb
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\Base.genruntimeconfig.cache
+Y:\Repositories\AdventOfCode\Base\obj\Debug\net5.0\refint\Base.dll
