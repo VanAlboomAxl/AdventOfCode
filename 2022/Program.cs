@@ -6,7 +6,8 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Day2_v2 oDay = new();
+            Day4 oDay = new();
+            //oDay.Testing = true;
             Console.WriteLine("Day1:");
             oDay.Q1();
 
