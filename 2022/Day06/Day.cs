@@ -10,18 +10,24 @@ namespace AdventOfCode
     {
         public override int _iDay { get { return 6; } }
       
+        public long logic(string s, int length)
+        {
+            for(int i = 0; i < s.Length - length-1; i++)
+                if (s.Substring(i, length).Distinct().Count() == length)
+                    return i + length;
+            return -1;
+        }
+
         public override void Q1()
         {
-            var lsInput = Input;
-            //lsInput = Test;
-        
+            foreach(var s in Test) Console.WriteLine(logic(s,4));
+            Console.WriteLine(logic(Input[0],4));
         }
-      
+
         public override void Q2()
         {
-            var lsInput = Input;
-            //lsInput = Test;
-   
+            foreach (var s in Test) Console.WriteLine(logic(s, 14));
+            Console.WriteLine(logic(Input[0], 14));
         }
 
     }
