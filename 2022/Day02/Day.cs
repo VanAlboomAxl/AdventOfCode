@@ -21,7 +21,7 @@ namespace AdventOfCode
             return result;
         }
 
-        public override void Q1()
+        public override string Q1()
         {
             var lsInput = Input;
             //lsInput = Test;
@@ -29,6 +29,7 @@ namespace AdventOfCode
             long l = 0;
             foreach (var d in data) l += play(d.Item1, d.Item2);
             Console.WriteLine(l);
+            return l.ToString();
         }
         private int play(string opponent, string me)
         {
@@ -63,14 +64,14 @@ namespace AdventOfCode
             return 0;
         }
 
-        public override void Q2()
+        public override string Q2()
         {
             var lsInput = Input;
             //lsInput = Test;
             var data = convert(lsInput);
             long l = 0;
             foreach (var d in data) l += play2(d.Item1, d.Item2);
-            Console.WriteLine(l);
+            return l.ToString();
         }
         private int play2(string opponent, string me)
         {
@@ -131,7 +132,7 @@ namespace AdventOfCode
             throw new Exception();
         }
         
-        public override void Q1()
+        public override string Q1()
         {
             var lsInput = Input;
             //lsInput = Test;
@@ -144,7 +145,8 @@ namespace AdventOfCode
                 l += result[Convert(ca[0])][me] +(int)me;
             }
 
-            Console.WriteLine(l);
+            //Console.WriteLine(l);
+            return l.ToString();
         }
 
         Dictionary<hand, Dictionary<char, hand>> q2convert = new()
@@ -153,7 +155,7 @@ namespace AdventOfCode
             { hand.Paper,new(){{'X',hand.Rock }, { 'Y', hand.Paper }, {'Z', hand.Scissors } } },
             { hand.Scissors,new(){{'X',hand.Paper }, { 'Y', hand.Scissors }, {'Z', hand.Rock } } },
         };
-        public override void Q2()
+        public override string Q2()
         {
             var lsInput = Input;
             //lsInput = Test;
@@ -167,7 +169,8 @@ namespace AdventOfCode
                 l += result[Convert(ca[0])][me] + (int)me;
             }
 
-            Console.WriteLine(l);
+            //Console.WriteLine(l);
+            return l.ToString();
         }
 
     }

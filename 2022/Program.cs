@@ -6,13 +6,13 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Day7 oDay = new();
+            Day8 oDay = new();
             //oDay.Testing = true;
             Console.WriteLine("Day1:");
-            oDay.Q1();
-
+            Console.WriteLine(oDay.Q1());
             Console.WriteLine("Day2:");
-            oDay.Q2();
+            Console.WriteLine(oDay.Q2());
+            
         }
     }
 }

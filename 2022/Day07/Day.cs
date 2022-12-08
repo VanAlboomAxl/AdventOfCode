@@ -62,7 +62,7 @@ namespace AdventOfCode
         }
         dir outer;
         List<dir> allDirs;
-        public override void Q1()
+        public override string Q1()
         {
             (outer, allDirs)  = convert(Data);
 
@@ -76,11 +76,11 @@ namespace AdventOfCode
             }
             long l = 0;
             foreach (var d in ldLogic) l += d.filesize();
-            Console.WriteLine(l);
+            return l.ToString();
         }
 
 
-        public override void Q2()
+        public override string Q2()
         {
             long lStillAvailable = 70000000 - outer.filesize();
             long lNeededToClear = 30000000 - lStillAvailable;
@@ -93,7 +93,7 @@ namespace AdventOfCode
             //        else if (d.filesize()<dToDelete.filesize()) dToDelete = d;
             //    }
 
-            Console.WriteLine(dToDelete.filesize()); //6999588
+            return dToDelete.filesize().ToString();
         }
 
         public class dir

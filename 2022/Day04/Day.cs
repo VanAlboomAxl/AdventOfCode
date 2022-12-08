@@ -27,18 +27,20 @@ namespace AdventOfCode
             return false;
         }
 
-        public override void Q1()
+        public override string Q1()
         {
             long lResult = 0;
             foreach (var s in Data) if (check(s)) lResult++;
-            Console.WriteLine(lResult);
+            //Console.WriteLine(lResult);
+            return lResult.ToString();
         }
       
-        public override void Q2()
+        public override string Q2()
         {
             long lResult = 0;
             foreach (var s in Data) if (check2(s)) lResult++;
-            Console.WriteLine(lResult);
+            //Console.WriteLine(lResult);
+            return lResult.ToString();
         }
         private bool check2(string s)
         {

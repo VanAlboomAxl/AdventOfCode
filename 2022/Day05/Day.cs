@@ -24,7 +24,7 @@ namespace AdventOfCode
                 alcCrates[l2].Push(alcCrates[l1].Pop());
         }
 
-        public override void Q1()
+        public override string Q1()
         {
             List<string> lsInput = Data;
             int i = 0;
@@ -55,11 +55,11 @@ namespace AdventOfCode
 
             string sResult = "";
             foreach (var scCrates in llcCrates) sResult += scCrates.Peek();
-            Console.WriteLine(sResult);
+            return sResult;
 
         }
       
-        public override void Q2()
+        public override string Q2()
         {
             List<string> lsInput = Data;
             int i = 0;
@@ -89,7 +89,8 @@ namespace AdventOfCode
 
             string sResult = "";
             foreach (var scCrates in llcCrates) sResult += scCrates.Peek();
-            Console.WriteLine(sResult);
+            //Console.WriteLine(sResult);
+            return sResult;
         }
         private void logic2(string s, List<Stack<char>> alcCrates)
         {

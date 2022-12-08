@@ -12,18 +12,19 @@ namespace AdventOfCode
         public override int _iDay { get { return 1; } }
       
 
-        public override void Q1()
+        public override string Q1()
         {
             var lsInput = Input;
             //lsInput = Test;
             var data = Convertors.Number(lsInput);
             List<long> result = logic(data);
-            Console.WriteLine(result.Max());
+            //Console.WriteLine(result.Max());
+            return result.Max().ToString();
         }
       
 
 
-        public override void Q2()
+        public override string Q2()
         {
             var lsInput = Input;
             //lsInput = Test;
@@ -31,8 +32,9 @@ namespace AdventOfCode
             var data = Convertors.Number(lsInput);
             List<long> result = logic(data);
             var descendingOrder = result.OrderByDescending(i => i).ToList();
-            Console.WriteLine(descendingOrder[0] + descendingOrder[1]+ descendingOrder[2]);
+            //Console.WriteLine(descendingOrder[0] + descendingOrder[1]+ descendingOrder[2]);
 
+            return (descendingOrder[0] + descendingOrder[1] + descendingOrder[2]).ToString();
         }
 
         public List<long> logic(List<long> data)

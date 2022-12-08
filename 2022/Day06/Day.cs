@@ -18,16 +18,16 @@ namespace AdventOfCode
             return -1;
         }
 
-        public override void Q1()
+        public override string Q1()
         {
             foreach(var s in Test) Console.WriteLine(logic(s,4));
-            Console.WriteLine(logic(Input[0],4));
+            return logic(Input[0],4).ToString();
         }
 
-        public override void Q2()
+        public override string Q2()
         {
             foreach (var s in Test) Console.WriteLine(logic(s, 14));
-            Console.WriteLine(logic(Input[0], 14));
+            return logic(Input[0], 14).ToString();
         }
 
     }

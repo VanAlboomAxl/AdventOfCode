@@ -10,7 +10,7 @@ namespace AdventOfCode
     {
         public override int _iDay { get { return 3; } }
       
-        public override void Q1()
+        public override string Q1()
         {
             long iResult= 0;
             foreach(var s in Data)
@@ -26,7 +26,8 @@ namespace AdventOfCode
                     }
                 iResult += charNumber(res);
             }
-            Console.WriteLine(iResult);
+            //Console.WriteLine(iResult);
+            return iResult.ToString();
         }
       
         public int charNumber(char c)
@@ -38,7 +39,7 @@ namespace AdventOfCode
             return result;
         }
 
-        public override void Q2()
+        public override string Q2()
         {
             long iResult = 0;
             var lsInput = Data;
@@ -56,7 +57,8 @@ namespace AdventOfCode
                     }
                 iResult += charNumber(res);
             }
-            Console.WriteLine(iResult);
+            //Console.WriteLine(iResult);
+            return iResult.ToString();
         }
 
     }

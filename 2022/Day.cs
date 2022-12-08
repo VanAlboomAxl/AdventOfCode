@@ -32,8 +32,8 @@ namespace AdventOfCode
         public string TestLocation { get { return $"{FolderLocation}\\test.txt";  } }
         public List<string> Test   { get { return Helper.ReadInput(TestLocation); } }
 
-        public abstract void Q1();
-        public abstract void Q2();
+        public abstract string Q1();
+        public abstract string Q2();
              
     }
 
