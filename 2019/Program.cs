@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace AdventOfCode
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Day01 oDay = new();
+            oDay.Testing = true;
+            Console.WriteLine("Day1:");
+            oDay.Q1();
+            Console.WriteLine("Day2:");
+            oDay.Q2();
+        }
+    }
+}
