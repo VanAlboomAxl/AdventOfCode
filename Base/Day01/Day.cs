@@ -10,15 +10,17 @@ namespace AdventOfCode
     public class Day01 : Day
     {
         public override int _iDay { get { return 1; } }
-      
 
-        public override void Q1()
+        public override string Q1()
         {
-        }
-        public override void Q2()
-        {
-
+            var lsInput = Data;
+            return "";
         }
 
+        public override string Q2()
+        {
+            var lsInput = Data;
+            return "";
+        }
     }
 }

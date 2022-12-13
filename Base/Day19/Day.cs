@@ -10,20 +10,18 @@ namespace AdventOfCode
     {
         public override int _iDay { get { return 19; } }
 
-        public override void Q1()
-        {
-            var lsInput = Input;
-            //lsInput = Test;
 
+        public override string Q1()
+        {
+            var lsInput = Data;
+            return "";
         }
 
-        public override void Q2()
+        public override string Q2()
         {
-            var lsInput = Input;
-            //lsInput = Test;
-
+            var lsInput = Data;
+            return "";
         }
-
 
     }
 }

@@ -14,6 +14,14 @@ namespace AdventOfCode
             return System.IO.File.ReadAllLines(sLocation).ToList();
         }
 
+  
+
+        public List<T> CopyList<T>(List<T> ListIn)
+        {
+            T[] ArrayOut = new T[ListIn.Count()];
+            ListIn.CopyTo(ArrayOut);
+            return ArrayOut.ToList();
+        }
 
     }
 }

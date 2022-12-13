@@ -12,8 +12,14 @@ namespace AdventOfCode
 
         public override string Q1()
         {
-            var lsInput = Input;
-            //lsInput = Test;
+            var lsInput = Data;
+            for(int i = 0; i < Data.Count; i += 3)
+            {
+                string s1 = Data[i];
+                string s2 = Data[i+1];
+
+            }
+
             return "";
         }
 

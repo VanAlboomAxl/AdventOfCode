@@ -9,21 +9,20 @@ namespace AdventOfCode
     public abstract class Day
     {
 
-        public int Year { get { return -1; } }
+        public int Year { get { return 2022; } }
         public string Location { get { return @"Y:\Repositories\AdventOfCode"; } }
 
         public abstract int _iDay { get; }
+
 
         public string FolderLocation
         {
             get
             {
-                if (_iDay < 10)
-                    return $"{Location}\\{Year}\\Day0{_iDay}";
+                if (_iDay < 10) return $"{Location}\\{Year}\\Day0{_iDay}";
                 return $"{Location}\\{Year}\\Day{_iDay}";
             }
         }
-
         public bool Testing { get; set; }
         public List<string> Data { get { if (Testing) return Test; return Input; } }
 
@@ -33,10 +32,8 @@ namespace AdventOfCode
         public string TestLocation { get { return $"{FolderLocation}\\test.txt";  } }
         public List<string> Test   { get { return Helper.ReadInput(TestLocation); } }
 
-        private void Log(string s) => Console.WriteLine(s);
-        
-        public abstract void Q1();
-        public abstract void Q2();
+        public abstract string Q1();
+        public abstract string Q2();
              
     }
 
