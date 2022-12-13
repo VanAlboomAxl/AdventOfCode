@@ -1,0 +1,15 @@
+Y:\Repositories\AdventOfCode\2016\bin\Debug\net6.0\2016.exe
+Y:\Repositories\AdventOfCode\2016\bin\Debug\net6.0\2016.deps.json
+Y:\Repositories\AdventOfCode\2016\bin\Debug\net6.0\2016.runtimeconfig.json
+Y:\Repositories\AdventOfCode\2016\bin\Debug\net6.0\2016.dll
+Y:\Repositories\AdventOfCode\2016\bin\Debug\net6.0\2016.pdb
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.csproj.AssemblyReference.cache
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.AssemblyInfoInputs.cache
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.AssemblyInfo.cs
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.csproj.CoreCompileInputs.cache
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.dll
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\refint\2016.dll
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.pdb
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\2016.genruntimeconfig.cache
+Y:\Repositories\AdventOfCode\2016\obj\Debug\net6.0\ref\2016.dll

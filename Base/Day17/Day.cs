@@ -19,7 +19,6 @@ namespace AdventOfCode
         public override string Q2()
         {
             var lsInput = Data;
-            //lsInput = Test;
             return "";
         }
     }
