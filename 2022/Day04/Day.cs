@@ -50,7 +50,7 @@ namespace AdventOfCode
             int min1 = int.Parse(s1[0]);
             int max1 = int.Parse(s1[1]);
             List<int> l1 = new();
-            for (int i = min1; i <= max1; i++)l1.Add(i); 
+            for (int i = min1; i <= max1; i++) l1.Add(i); 
 
             string[] s2 = sRanges[1].Split('-');
             int min2 = int.Parse(s2[0]);
@@ -60,6 +60,7 @@ namespace AdventOfCode
 
             List<int> common = l1.Intersect(l2).ToList();
 
+            Console.WriteLine(common.Count > 0);
             if (common.Count > 0) return true;
             return false;
         }
