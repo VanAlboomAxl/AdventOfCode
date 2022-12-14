@@ -9,7 +9,7 @@ namespace AdventOfCode
     public abstract class Day
     {
 
-        public int Year { get { return 2022; } }
+        public int Year { get { return 2015; } }
         public string Location { get { return @"Y:\Repositories\AdventOfCode"; } }
 
         public abstract int _iDay { get; }

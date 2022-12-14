@@ -13,3 +13,9 @@ Y:\Repositories\AdventOfCode\2015\obj\Debug\net6.0\refint\2015.dll
 Y:\Repositories\AdventOfCode\2015\obj\Debug\net6.0\2015.pdb
 Y:\Repositories\AdventOfCode\2015\obj\Debug\net6.0\2015.genruntimeconfig.cache
 Y:\Repositories\AdventOfCode\2015\obj\Debug\net6.0\ref\2015.dll
+Y:\Repositories\AdventOfCode\2015\bin\Debug\net6.0\Helper.deps.json
+Y:\Repositories\AdventOfCode\2015\bin\Debug\net6.0\Helper.runtimeconfig.json
+Y:\Repositories\AdventOfCode\2015\bin\Debug\net6.0\Helper.exe
+Y:\Repositories\AdventOfCode\2015\bin\Debug\net6.0\Helper.dll
+Y:\Repositories\AdventOfCode\2015\bin\Debug\net6.0\Helper.pdb
+Y:\Repositories\AdventOfCode\2015\obj\Debug\net6.0\2015.csproj.CopyComplete

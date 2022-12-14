@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "2015/1.0.0": {
-        "dependencies": {
-          "Helper": "1.0.0"
-        },
-        "runtime": {
-          "2015.dll": {}
-        }
-      },
       "Helper/1.0.0": {
         "runtime": {
           "Helper.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "2015/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Helper/1.0.0": {
       "type": "project",
       "serviceable": false,
