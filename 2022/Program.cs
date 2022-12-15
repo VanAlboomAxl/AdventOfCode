@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace AdventOfCode
 {
@@ -7,12 +8,16 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             Day15 oDay = new();
-            oDay.Testing = true;
-            Console.WriteLine("Day1:");
-            Console.WriteLine(oDay.Q1());
-            Console.WriteLine("Day2:");
-            Console.WriteLine(oDay.Q2());
-            
+            //oDay.Testing = true;
+            Stopwatch watch = new();
+            watch.Reset();
+            Console.WriteLine($"{oDay.GetType()}:");
+            watch.Start();
+            Console.WriteLine(oDay.Q1() + " " + watch.Elapsed);
+            watch.Restart();
+            Console.WriteLine(oDay.Q2() + " " + watch.Elapsed);
+            watch.Stop();
+            Console.WriteLine("__________________________________");
         }
     }
 }
