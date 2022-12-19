@@ -7,15 +7,17 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Day15 oDay = new();
+            Day18 oDay = new();
             //oDay.Testing = true;
             Stopwatch watch = new();
             watch.Reset();
             Console.WriteLine($"{oDay.GetType()}:");
             watch.Start();
-            Console.WriteLine(oDay.Q1() + " " + watch.Elapsed);
+            string q1 = oDay.Q1();
+            Console.WriteLine(watch.Elapsed + " - " + q1);
             watch.Restart();
-            Console.WriteLine(oDay.Q2() + " " + watch.Elapsed);
+            string q2 = oDay.Q2();
+            Console.WriteLine(watch.Elapsed + " - " + q2);
             watch.Stop();
             Console.WriteLine("__________________________________");
         }

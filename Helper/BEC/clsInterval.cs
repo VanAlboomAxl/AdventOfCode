@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Helper.Classes
+namespace Helper.BEC
 {
     public class clsInterval : IComparable<clsInterval>
     {
