@@ -7,7 +7,7 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Day20 oDay = new();
+            Day21 oDay = new();
             //oDay.Testing = true;
             Stopwatch watch = new();
             watch.Reset();
