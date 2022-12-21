@@ -30,7 +30,7 @@ namespace AdventOfCode
         }
         public override string Q1()
         {
-            return "skip to part 2";
+            //return "skip to part 2";
             var blueprints = convert(Data);
             long result = 0;
             for(int i=0;i<blueprints.Count;i++)
@@ -40,6 +40,7 @@ namespace AdventOfCode
             }
             return result.ToString();
         }
+        
         int logic(Blueprint bp, int iMinutes)
         {
             int iMaxOreForRobot = new int[] {bp.oreRobotCost, bp.clayRobotCost,bp.obsidianRobotCost.Item1, bp.geodeRobotCost.Item1 }.Max();
@@ -417,8 +418,13 @@ namespace AdventOfCode
         // works again, a bit faster than 3, but still slow
         // 38s for test data
         // xs for input data
+        // updated with max robots
         int logic_v5(Blueprint bp, int iMinutes)
         {
+            int iMaxOreForRobot = new int[] { bp.oreRobotCost, bp.clayRobotCost, bp.obsidianRobotCost.Item1, bp.geodeRobotCost.Item1 }.Max();
+            int iMaxClayForRobot = bp.obsidianRobotCost.Item2;
+            int iMaxObsidianForRobot = bp.geodeRobotCost.Item2;
+
             int[] materials = { 0, 0, 0, 0 };
             int[] robots = { 1, 0, 0, 0 };
             int iMaxGeodes = 0;
@@ -447,7 +453,8 @@ namespace AdventOfCode
                     if (iFinal > iMaxGeodes) iMaxGeodes = iFinal;
                     continue;
                 }
-                //if (cheat(bp, current.materials, current.robots, current.time) == 0) continue;
+                //if (cheat(bp, current.materials, current.robots, current.time) == 0) 
+                //   continue;
 
                 if (current.robots[2] > 0)
                 {
@@ -465,7 +472,7 @@ namespace AdventOfCode
                         if (iFinal > iMaxGeodes) iMaxGeodes = iFinal;
                     }
                 }
-                if (current.robots[1] > 0)
+                if (current.robots[1] > 0 && current.robots[2] < iMaxObsidianForRobot)
                 {
                     //possible to make an obsidian robot
                     var obsiNode = createObsidianNode(bp, current);
@@ -482,30 +489,35 @@ namespace AdventOfCode
                     }
                 }
                 // make clay robot
-                var clayNode = createClayNode(bp, current);
-                if (clayNode != null && clayNode.time > gScore.GetValueOrDefault(clayNode.ToString(), 0))
+                if (current.robots[1] < iMaxClayForRobot)
                 {
-                    gScore[clayNode.ToString()] = clayNode.time;
-                    openSet.Enqueue(clayNode);
+                    var clayNode = createClayNode(bp, current);
+                    if (clayNode != null && clayNode.time > gScore.GetValueOrDefault(clayNode.ToString(), 0))
+                    {
+                        gScore[clayNode.ToString()] = clayNode.time;
+                        openSet.Enqueue(clayNode);
+                    }
+                    else if (!xFinalCal)
+                    {
+                        int iFinal = finalGeodes(current);
+                        xFinalCal = true;
+                        if (iFinal > iMaxGeodes) iMaxGeodes = iFinal;
+                    }
                 }
-                else if (!xFinalCal)
-                {
-                    int iFinal = finalGeodes(current);
-                    xFinalCal = true;
-                    if (iFinal > iMaxGeodes) iMaxGeodes = iFinal;
-                }
-
                 //make ore robot
-                var oreNode = createOreNode(bp, current);
-                if (oreNode != null && oreNode.time > gScore.GetValueOrDefault(oreNode.ToString(), 0))
-                {
-                    gScore[oreNode.ToString()] = oreNode.time; 
-                    openSet.Enqueue(oreNode);
-                }
-                else if (!xFinalCal)
+                if (current.robots[0] < iMaxOreForRobot) 
+                { 
+                    var oreNode = createOreNode(bp, current);
+                    if (oreNode != null && oreNode.time > gScore.GetValueOrDefault(oreNode.ToString(), 0))
+                    {
+                        gScore[oreNode.ToString()] = oreNode.time; 
+                        openSet.Enqueue(oreNode);
+                    }
+                    else if (!xFinalCal)
                 {
                     int iFinal = finalGeodes(current);
                     if (iFinal > iMaxGeodes) iMaxGeodes = iFinal;
+                }
                 }
             }
             
@@ -631,9 +643,9 @@ namespace AdventOfCode
             }
         }
 
-
         public override string Q2()
         {
+            //return null;
             var blueprints = convert(Data);
             long result = 1;
             for (int i = 0; i < blueprints.Count && i<3; i++)

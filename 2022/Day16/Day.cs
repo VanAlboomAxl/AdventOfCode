@@ -264,4 +264,142 @@ namespace AdventOfCode
 
 
     }
+    public class Day16_v2 : Day
+    {
+        public override int _iDay { get { return 16; } }
+
+        public class clsValve
+        {
+            public string Name { get; private set; }
+            public long FlowRate { get; private set; }
+            public List<string> lsPipes { get; set; }
+            public List<clsPipe> Pipes { get; private set; }
+            public clsValve(string s)
+            {
+                //string sRegexString = @"Valve ([A-Z]+) has flow rate=(\d+); tunnel[s]* lead[s]* to valve[s]* ([A-Z]+)(, [A-Z]+)*";
+                string sRegexString = @"Valve ([A-Z]+) has flow rate=(\d+); tunnel[s]* lead[s]* to valve[s]* (.+)";
+                Regex rg = new Regex(sRegexString);
+                GroupCollection matches = rg.Matches(s)[0].Groups;
+                Name = matches[1].Value;
+                FlowRate = long.Parse(matches[2].Value);
+                Pipes = new();
+                lsPipes = matches[3].Value.Replace(" ", "").Split(",").ToList();
+
+            }
+            public override string ToString()
+            {
+                return Name;
+            }
+        }
+        public class clsPipe
+        {
+            public clsValve valve { get; private set; }
+            public int time { get; private set; }
+            public clsPipe(clsValve valve, int time)
+            {
+                this.valve = valve;
+                this.time = time;
+            }
+            public override string ToString()
+            {
+                return $"{valve}:{time}";
+            }
+        }
+
+        public override string Q1()
+        {
+            //return null; //skip to do part 2
+            var lsInput = Data;
+            List<clsValve> AllValves = new();
+            List<clsValve> Valves = new();
+            clsValve current = null;
+            foreach (var s in lsInput)
+            {
+                clsValve v = new(s);
+                if (v.Name.Equals("AA")) current = v;
+                Valves.Add(v); 
+                AllValves.Add(v); 
+            }
+            /*while(Valves.Count > 0)
+            {
+                clsValve v = Valves[0]; Valves.RemoveAt(0);
+                List<string> pipesToCheck = new();
+                while (v.lsPipes.Count > 0)
+                {
+                    string sPipe = v.lsPipes[0]; v.lsPipes.RemoveAt(0); 
+                    var valve = AllValves.Where(x => x.Name.Equals(sPipe)).First();
+                    if (valve.FlowRate > 0)
+                    {
+                        v.Pipes.Add(new(valve, 1));
+                    }
+                    else if (valve.lsPipes.Count == 0)
+                    {
+                        foreach(var p in valve.Pipes)
+                            if(p.valve != v)
+                                v.Pipes.Add(new(p.valve, p.time+1));
+                    }
+                    else
+                    {
+                        pipesToCheck.Add(sPipe);
+                    }
+                }
+                v.lsPipes = pipesToCheck;
+                if(v.lsPipes.Count > 0)
+                {
+                    Valves.Add(v);
+                }
+            }*/
+
+            foreach (var v in Valves) 
+                foreach (var s in v.lsPipes)            
+                    v.Pipes.Add(new(Valves.Where(x => x.Name.Equals(s)).First(), 1));
+                
+            foreach (var v in Valves)
+                foreach (var v2 in Valves)
+                    if (v != v2 && v2.FlowRate > 0 && v.Pipes.Where(x=>x.valve==v2).FirstOrDefault() == null)
+                        v.Pipes.Add(new(v2, Astar(v, v2)));
+
+            //get alle valves that need to be opened --> input for logic
+            
+            return null;
+            //return logic(30, 0, current, null, new(), Valves.Where(x => x.FlowRate > 0).Count()).ToString();
+        }
+
+        int Astar(clsValve start, clsValve goal)
+        {
+            Dictionary<clsValve, int> gScore = new();
+            Queue<clsValve> openSet = new();
+            openSet.Enqueue(start);
+            gScore[start] = 0;
+            while (openSet.TryDequeue(out clsValve current))
+            {
+                foreach (var neighbor in current.Pipes)
+                {
+                    int tentative_gScore = gScore[current] + neighbor.time;
+                    if (tentative_gScore < gScore.GetValueOrDefault(neighbor.valve, int.MaxValue))
+                    {
+                        gScore[neighbor.valve] = tentative_gScore;
+                        openSet.Enqueue(neighbor.valve);
+                    }
+
+                }
+
+            }
+            return  gScore[goal];
+        }
+
+        int logic(int iTimeLeft , clsValve current)
+        {
+
+        }
+
+
+
+        public override string Q2()
+        {
+            return null;
+        }
+
+    }
+
 }
