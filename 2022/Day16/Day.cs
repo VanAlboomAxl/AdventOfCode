@@ -390,7 +390,7 @@ namespace AdventOfCode
 
         int logic(int iTimeLeft , clsValve current)
         {
-
+            return 0;
         }
 
 

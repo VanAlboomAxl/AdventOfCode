@@ -7,8 +7,8 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            Day16_v2 oDay = new();
-            oDay.Testing = true;
+            Day22 oDay = new();
+            //oDay.Testing = true;
             Stopwatch watch = new();
             watch.Reset();
             Console.WriteLine($"{oDay.GetType()}:");
