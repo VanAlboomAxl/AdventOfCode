@@ -45,7 +45,6 @@ namespace AdventOfCode
 
             return $"{1000*(y+1)+4*(x+1)+direction}";
         }
-
         void logic(List<string> map,int move, ref int x,ref int y,int direction)
         {
             for (int i = 0; i < move; i++)
@@ -241,8 +240,6 @@ namespace AdventOfCode
 
             return $"{1000 * (y + 1) + 4 * (x + 1) + direction}";
         }
-
-
         void q2Logic(List<string> map, int move, ref int x, ref int y, ref int direction)
         {
             for (int i = 0; i < move; i++)

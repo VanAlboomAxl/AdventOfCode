@@ -1,0 +1,5 @@
+Y:\Repositories\AdventOfCode\2019\obj\Debug\net6.0\2019.csproj.AssemblyReference.cache
+Y:\Repositories\AdventOfCode\2019\obj\Debug\net6.0\2019.GeneratedMSBuildEditorConfig.editorconfig
+Y:\Repositories\AdventOfCode\2019\obj\Debug\net6.0\2019.AssemblyInfoInputs.cache
+Y:\Repositories\AdventOfCode\2019\obj\Debug\net6.0\2019.AssemblyInfo.cs
+Y:\Repositories\AdventOfCode\2019\obj\Debug\net6.0\2019.csproj.CoreCompileInputs.cache
