@@ -7,14 +7,16 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
+            //day22reddit d = new();
+
             Day22 oDay = new();
-            oDay.Testing = true;
+            //oDay.Testing = true;
             Stopwatch watch = new();
             watch.Reset();
             Console.WriteLine($"{oDay.GetType()}:");
             watch.Start();
             string q1 = oDay.Q1();
-            //Console.WriteLine(watch.Elapsed + " - " + q1);
+            Console.WriteLine(watch.Elapsed + " - " + q1);
             watch.Restart();
             string q2 = oDay.Q2();
             Console.WriteLine(watch.Elapsed + " - " + q2);
